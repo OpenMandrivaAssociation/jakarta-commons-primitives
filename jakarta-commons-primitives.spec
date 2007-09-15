@@ -34,7 +34,7 @@
 
 Name:           jakarta-%{shortname}
 Version:        1.0
-Release:        %mkrel 3.0.2
+Release:        %mkrel 3.0.3
 Epoch:          0
 Summary:        Jakarta Commons Primitives Component
 
@@ -46,8 +46,6 @@ Patch0:         %{name}-crosslink.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %if %{gcj_support}
-Requires(post): java-gcj-compat
-Requires(postun): java-gcj-compat
 BuildRequires:  java-gcj-compat-devel
 %else
 BuildArch:      noarch
