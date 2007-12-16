@@ -34,7 +34,7 @@
 
 Name:           jakarta-%{shortname}
 Version:        1.0
-Release:        %mkrel 3.0.3
+Release:        %mkrel 3.0.4
 Epoch:          0
 Summary:        Jakarta Commons Primitives Component
 
@@ -51,7 +51,7 @@ BuildRequires:  java-gcj-compat-devel
 BuildArch:      noarch
 BuildRequires:  java-devel
 %endif
-BuildRequires:  jpackage-utils >= 0:1.5
+BuildRequires:  java-rpmbuild >= 0:1.5
 #BuildRequires:  java-javadoc
 BuildRequires:  ant
 BuildRequires:  junit
