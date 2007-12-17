@@ -43,7 +43,6 @@ Group:          Development/Java
 URL:            http://jakarta.apache.org/commons/primitives/
 Source0:        http://archive.apache.org/dist/jakarta/commons/primitives/source/commons-primitives-1.0-src.tar.gz
 Patch0:         %{name}-crosslink.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %if %{gcj_support}
 BuildRequires:  java-gcj-compat-devel
