@@ -34,7 +34,7 @@
 
 Name:           jakarta-%{shortname}
 Version:        1.0
-Release:        %mkrel 3.0.4
+Release:        %mkrel 3.0.5
 Epoch:          0
 Summary:        Jakarta Commons Primitives Component
 
