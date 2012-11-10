@@ -1,0 +1,22 @@
+--- build.xml~	2003-11-06 01:28:01.000000000 +0200
++++ build.xml	2003-12-14 23:54:50.000000000 +0200
+@@ -9,10 +9,7 @@
+ 
+ <!-- ========== Initialize Properties ===================================== -->
+ 
+-
+-  <property file="build.properties"/>                <!-- Component local   -->
+-  <property file="../build.properties"/>             <!-- Commons local     -->
+-  <property file="${user.home}/build.properties"/>   <!-- User local        -->
++  <property name="j2se.apidoc" value="http://java.sun.com/j2se/1.4/docs/api/"/>
+ 
+ 
+ <!-- ========== External Dependencies ===================================== -->
+@@ -199,6 +196,7 @@
+             windowtitle="${component.title} (Version ${component.version})"
+                  bottom="Copyright (c) 2002-2003 - Apache Software Foundation">
+       <classpath refid="compile.classpath"/>
++      <link href="${j2se.apidoc}"/>
+     </javadoc>
+   </target>
+ 
