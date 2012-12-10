@@ -126,3 +126,51 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(0644,root,root,0755)
 %doc %{_javadocdir}/%{name}-%{version}
 %doc %{_javadocdir}/%{name}
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0:1.0-3.0.6mdv2011.0
++ Revision: 619761
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0:1.0-3.0.5mdv2010.0
++ Revision: 429589
+- rebuild
+
+* Thu Feb 14 2008 Thierry Vignaud <tv@mandriva.org> 0:1.0-3.0.4mdv2009.0
++ Revision: 167951
+- fix no-buildroot-tag
+- kill re-definition of %%buildroot on Pixel's request
+
+* Sun Dec 16 2007 Anssi Hannula <anssi@mandriva.org> 0:1.0-3.0.4mdv2008.1
++ Revision: 120918
+- buildrequire java-rpmbuild, i.e. build with icedtea on x86(_64)
+
+* Sat Sep 15 2007 Anssi Hannula <anssi@mandriva.org> 0:1.0-3.0.3mdv2008.0
++ Revision: 87417
+- rebuild to filter out autorequires of GCJ AOT objects
+- remove unnecessary Requires(post) on java-gcj-compat
+
+* Sat Aug 04 2007 David Walluck <walluck@mandriva.org> 0:1.0-3.0.2mdv2008.0
++ Revision: 58798
+- bump release
+
+* Thu Aug 02 2007 David Walluck <walluck@mandriva.org> 0:1.0-3.0.1mdv2008.0
++ Revision: 58336
+- Import jakarta-commons-primitives
+
+
+
+
+* Mon Jul 09 2007 Alexander Kurtakov <akurtakov@active-lynx.com> - 0:1.0-3.0.1mdv2008.0
+- Add gcj support
+- Use mdv macros
+
+* Mon May 29 2006 Fernando Nasser <fnasser@redhat.com> - 0:1.0-3jpp
+- First JPP 1.7 build
+
+* Sun Aug 23 2004 Randy Watler <rwatler at finali.com> - 0:1.0-2jpp
+- Rebuild with ant-1.6.2
+
+* Sun Dec 14 2003 Ville Skyttä <ville.skytta at iki.fi> - 0:1.0-1jpp
+- First build.
